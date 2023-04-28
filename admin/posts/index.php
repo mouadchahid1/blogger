@@ -66,8 +66,8 @@ adminOnly();
                                     <td><?php echo $key + 1; ?></td>
                                     <td><?php echo $post['title'] ?></td>
                                     <td>Awa</td>
-                                    <td><a href="edit.php?id=<?php echo $post['id']; ?>" class="edit">edit</a></td>
-                                    <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="delete">delete</a></td>
+                                    <td><a href="edit.php?id=<?php echo $post['id']; ?>" class="edit">Modifier</a></td>
+                                    <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="delete">Supprimer</a></td>
 
                                     <?php if ($post['published']): ?>
                                         <td><a href="edit.php?published=0&p_id=<?php echo $post['id'] ?>" class="unpublish">unpublish</a></td>

@@ -20,7 +20,7 @@ guestsOnly();
   <!-- Custom Styling -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title>Login</title>
+  <title>Connexion</title>
 </head>
 
 <body>
@@ -30,22 +30,22 @@ guestsOnly();
   <div class="auth-content">
 
     <form action="login.php" method="post">
-      <h2 class="form-title">Login</h2>
+      <h2 class="form-title">Connexion</h2>
 
       <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
 
       <div>
-        <label>Username</label>
+        <label>Nom d'utilisateur</label>
         <input type="text" name="username" value="<?php echo $username; ?>" class="text-input">
       </div>
       <div>
-        <label>Password</label>
+        <label>Mot de passe</label>
         <input type="password" name="password" value="<?php echo $password; ?>" class="text-input">
       </div>
       <div>
-        <button type="submit" name="login-btn" class="btn btn-big">Login</button>
+        <button type="submit" name="login-btn" class="btn btn-big">Connexion</button>
       </div>
-      <p>Or <a href="<?php echo BASE_URL . '/register.php' ?>">Sign Up</a></p>
+      <p>Or <a href="<?php echo BASE_URL . '/register.php' ?>">S'inscrire</a></p>
     </form>
 
   </div>

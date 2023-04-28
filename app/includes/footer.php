@@ -3,14 +3,13 @@
     <div class="footer-content">
 
       <div class="footer-section about">
-        <h1 class="logo-text"><span>Awa</span>Inspires</h1>
+        <h1 class="logo-text"><span>AC</span>Blog</h1>
         <p>
-          AwaInspires is a fictional blog conceived for the purpose of a tutorial on YouTube.
-          However, Awa has a blog called pieceofadvice.org where he writes truly inspiring stuff.
+        ACBlog est un site pour changer des informations et publier des articles.
         </p>
         <div class="contact">
-          <span><i class="fas fa-phone"></i> &nbsp; 123-456-789</span>
-          <span><i class="fas fa-envelope"></i> &nbsp; info@awainspires.com</span>
+          <span><i class="fas fa-phone"></i> &nbsp; +212 78545654</span>
+          <span><i class="fas fa-envelope"></i> &nbsp;monotechnologie@gmail.com</span>
         </div>
         <div class="socials">
           <a href="#"><i class="fab fa-facebook"></i></a>
@@ -21,36 +20,36 @@
       </div>
 
       <div class="footer-section links">
-        <h2>Quick Links</h2>
+        <h2>Liens rapides</h2>
         <br>
         <ul>
           <a href="#">
-            <li>Events</li>
+            <li>Événements</li>
           </a>
           <a href="#">
-            <li>Team</li>
+            <li>Équipe</li>
           </a>
           <a href="#">
-            <li>Mentores</li>
+            <li>Mentors</li>
           </a>
           <a href="#">
-            <li>Gallery</li>
+            <li>Galerie</li>
           </a>
           <a href="#">
-            <li>Terms and Conditions</li>
+            <li>Conditions d'utilisation</li>
           </a>
         </ul>
       </div>
 
       <div class="footer-section contact-form">
-        <h2>Contact us</h2>
+        <h2>Nous contacter</h2>
         <br>
         <form action="index.html" method="post">
           <input type="email" name="email" class="text-input contact-input" placeholder="Your email address...">
           <textarea rows="4" name="message" class="text-input contact-input" placeholder="Your message..."></textarea>
           <button type="submit" class="btn btn-big contact-btn">
             <i class="fas fa-envelope"></i>
-            Send
+            Envoyer
           </button>
         </form>
       </div>
@@ -58,7 +57,7 @@
     </div>
 
     <div class="footer-bottom">
-      &copy; codingpoets.com | Designed by Awa Melvine
+      &copy; monotechnologie.com | ACBlog
     </div>
   </div>
   <!-- // footer -->
