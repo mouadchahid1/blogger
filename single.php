@@ -27,7 +27,7 @@ $posts = selectAll('posts', ['published' => 1]);
   <!-- Custom Styling -->
   <link rel="stylesheet" href="assets/css/style.css">
 
-  <title><?php echo $post['title']; ?> | AwaInspires</title>
+  <title><?php echo $post['title']; ?> | Acblog</title>
 </head>
 
 <body>
@@ -63,13 +63,13 @@ $posts = selectAll('posts', ['published' => 1]);
 
         <div class="fb-page" data-href="https://web.facebook.com/codingpoets/" data-small-header="false"
           data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-          <blockquote cite="https://web.facebook.com/codingpoets/" class="fb-xfbml-parse-ignore"><a
-              href="https://web.facebook.com/codingpoets/">Coding Poets</a></blockquote>
+          <blockquote cite="https://web.facebook.com/monoTehnologie/" class="fb-xfbml-parse-ignore"><a
+              href="https://web.facebook.com/codingpoets/">Mono Technologie</a></blockquote>
         </div>
 
 
         <div class="section popular">
-          <h2 class="section-title">Popular</h2>
+          <h2 class="section-title">Populaire</h2>
 
           <?php foreach ($posts as $p): ?>
             <div class="post clearfix">
@@ -84,7 +84,7 @@ $posts = selectAll('posts', ['published' => 1]);
         </div>
 
         <div class="section topics">
-          <h2 class="section-title">Topics</h2>
+          <h2 class="section-title">Sujets</h2>
           <ul>
             <?php foreach ($topics as $topic): ?>
               <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>

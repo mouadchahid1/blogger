@@ -3,13 +3,13 @@ include("path.php");
 include(ROOT_PATH . "/app/controllers/topics.php");
 
 $posts = array();
-$postsTitle = 'Recent Posts';
+$postsTitle = 'Posts récents';
 
 if (isset($_GET['t_id'])) {
   $posts = getPostsByTopicId($_GET['t_id']);
-  $postsTitle = "You searched for posts under '" . $_GET['name'] . "'";
+  $postsTitle = "Vous avez cherché  les posts sous le thème'" . $_GET['name'] . "'";
 } else if (isset($_POST['search-term'])) {
-  $postsTitle = "You searched for '" . $_POST['search-term'] . "'";
+  $postsTitle = " Vous avez cherché '" . $_POST['search-term'] . "'";
   $posts = searchPosts($_POST['search-term']);
 } else {
   $posts = getPublishedPosts();
@@ -49,7 +49,7 @@ if (isset($_GET['t_id'])) {
 
     <!-- Post Slider -->
     <div class="post-slider">
-      <h1 class="slider-title">Trending Posts</h1>
+      <h1 class="slider-title">Posts tendances</h1>
       <i class="fas fa-chevron-left prev"></i>
       <i class="fas fa-chevron-right next"></i>
 
@@ -91,7 +91,7 @@ if (isset($_GET['t_id'])) {
               <p class="preview-text">
                 <?php echo html_entity_decode(substr($post['body'], 0, 150) . '...'); ?>
               </p>
-              <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Read More</a>
+              <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Voir plus</a>
             </div>
           </div>    
         <?php endforeach; ?>
@@ -104,7 +104,7 @@ if (isset($_GET['t_id'])) {
       <div class="sidebar">
 
         <div class="section search">
-          <h2 class="section-title">Search</h2>
+          <h2 class="section-title">Rechercher</h2>
           <form action="index.php" method="post">
             <input type="text" name="search-term" class="text-input" placeholder="Search...">
           </form>
@@ -112,7 +112,7 @@ if (isset($_GET['t_id'])) {
 
 
         <div class="section topics">
-          <h2 class="section-title">Topics</h2>
+          <h2 class="section-title">Sujets</h2>
           <ul>
             <?php foreach ($topics as $key => $topic): ?>
               <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] . '&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>

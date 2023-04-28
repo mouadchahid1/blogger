@@ -26,7 +26,7 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Add Post</title>
+        <title>Section admin - Ajouter un post</title>
     </head>
 
     <body>
@@ -42,24 +42,24 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Post</a>
-                    <a href="index.php" class="btn btn-big">Manage Posts</a>
+                    <a href="create.php" class="btn btn-big">Ajouter un post</a>
+                    <a href="index.php" class="btn btn-big">Gérer les posts</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Add Post</h2>
+                    <h2 class="page-title">Ajouter un post</h2>
 
                     <?php include(ROOT_PATH . '/app/helpers/formErrors.php'); ?>
 
                     <form action="create.php" method="post" enctype="multipart/form-data">
                         <div>
-                            <label>Title</label>
+                            <label>Titre</label>
                             <input type="text" name="title" value="<?php echo $title ?>" class="text-input">
                         </div>
                         <div>
-                            <label>Body</label>
+                            <label>Contenu</label>
                             <textarea name="body" id="body"><?php echo $body ?></textarea>
                         </div>
                         <div>
@@ -67,7 +67,7 @@ adminOnly();
                             <input type="file" name="image" class="text-input">
                         </div>
                         <div>
-                            <label>Topic</label>
+                            <label>Sujet</label>
                             <select name="topic_id" class="text-input">
                                 <option value=""></option>
                                 <?php foreach ($topics as $key => $topic): ?>
@@ -85,19 +85,19 @@ adminOnly();
                             <?php if (empty($published)): ?>
                                 <label>
                                     <input type="checkbox" name="published">
-                                    Publish
+                                    Publié
                                 </label>
                             <?php else: ?>
                                 <label>
                                     <input type="checkbox" name="published" checked>
-                                    Publish
+                                    Publié
                                 </label>
                             <?php endif; ?>
                            
 
                         </div>
                         <div>
-                            <button type="submit" name="add-post" class="btn btn-big">Add Post</button>
+                            <button type="submit" name="add-post" class="btn btn-big">Ajoutepsot</button>
                         </div>
                     </form>
 
