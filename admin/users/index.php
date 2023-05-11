@@ -26,7 +26,7 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Manage Users</title>
+        <title>Section Admin - Ajouter un utilisateur</title>
     </head>
 
     <body>
@@ -42,18 +42,18 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add User</a>
-                    <a href="index.php" class="btn btn-big">Manage Users</a>
+                    <a href="create.php" class="btn btn-big">Ajouter un utilisateur</a>
+                    <a href="index.php" class="btn btn-big">Gérer les utilisateurs</a>
                 </div>
                 <div class="content">
-                    <h2 class="page-title">Manage Users</h2>
+                    <h2 class="page-title">Gérer les utilisateurs</h2>
 
                     <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
 
                     <table>
                         <thead>
                             <th>SN</th>
-                            <th>Username</th>
+                            <th>Nom d'utilisateur</th>
                             <th>Email</th>
                             <th colspan="2">Action</th>
                         </thead>
@@ -63,8 +63,8 @@ adminOnly();
                                     <td><?php echo $key + 1; ?></td>
                                     <td><?php echo $user['username']; ?></td>
                                     <td><?php echo $user['email']; ?></td>
-                                    <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">edit</a></td>
-                                    <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">delete</a></td>
+                                    <td><a href="edit.php?id=<?php echo $user['id']; ?>" class="edit">Modifier</a></td>
+                                    <td><a href="index.php?delete_id=<?php echo $user['id']; ?>" class="delete">Supprimer</a></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

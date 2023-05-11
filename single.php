@@ -61,10 +61,10 @@ $posts = selectAll('posts', ['published' => 1]);
       <!-- Sidebar -->
       <div class="sidebar single">
 
-        <div class="fb-page" data-href="https://web.facebook.com/codingpoets/" data-small-header="false"
+        <div class="fb-page" data-href="https://web.facebook.com/monotechnologie/" data-small-header="false"
           data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
           <blockquote cite="https://web.facebook.com/monoTehnologie/" class="fb-xfbml-parse-ignore"><a
-              href="https://web.facebook.com/codingpoets/">Mono Technologie</a></blockquote>
+              href="https://web.facebook.com/monotechnologie/">Mono Technologie</a></blockquote>
         </div>
 
 

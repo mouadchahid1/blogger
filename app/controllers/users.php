@@ -23,7 +23,7 @@ function loginUser($user)
     $_SESSION['id'] = $user['id'];
     $_SESSION['username'] = $user['username'];
     $_SESSION['admin'] = $user['admin'];
-    $_SESSION['message'] = 'You are now logged in';
+    $_SESSION['message'] = ' vous êtes maintenant connecté';
     $_SESSION['type'] = 'success';
 
     if ($_SESSION['admin']) {
@@ -108,7 +108,7 @@ if (isset($_POST['login-btn'])) {
         if ($user && password_verify($_POST['password'], $user['password'])) {
             loginUser($user);
         } else {
-           array_push($errors, 'Wrong credentials');
+           array_push($errors, 'Le nom d\'utilisateur ou le mot de passe est incorrect');
         }
     }
 

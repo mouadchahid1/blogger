@@ -26,7 +26,7 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Manage Topics</title>
+        <title>Section d'administration - Gérer les sujets</title>
     </head>
 
     <body>
@@ -42,14 +42,14 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Topic</a>
-                    <a href="index.php" class="btn btn-big">Manage Topics</a>
+                    <a href="create.php" class="btn btn-big">Ajouter un sujet</a>
+                    <a href="index.php" class="btn btn-big">Gérer les sujets</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Manage Topics</h2>
+                    <h2 class="page-title">Gérer les sujets</h2>
 
                     <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
 
@@ -64,8 +64,8 @@ adminOnly();
                                <tr>
                                     <td><?php echo $key + 1; ?></td>
                                     <td><?php echo $topic['name']; ?></td>
-                                    <td><a href="edit.php?id=<?php echo $topic['id']; ?>" class="edit">edit</a></td>
-                                    <td><a href="index.php?del_id=<?php echo $topic['id']; ?>" class="delete">delete</a></td>
+                                    <td><a href="edit.php?id=<?php echo $topic['id']; ?>" class="edit">modifier</a></td>
+                                    <td><a href="index.php?del_id=<?php echo $topic['id']; ?>" class="delete">supprimer</a></td>
                                 </tr> 
                             <?php endforeach; ?>
                         </tbody>

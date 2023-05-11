@@ -26,7 +26,7 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Edit User</title>
+        <title>Section Admin - Ajouter un utilisateur</title>
     </head>
 
     <body>
@@ -42,21 +42,21 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add User</a>
-                    <a href="index.php" class="btn btn-big">Manage Users</a>
+                    <a href="create.php" class="btn btn-big">Ajouter un utilisateur</a>
+                    <a href="index.php" class="btn btn-big">Gérer les utilisateurs</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Edit User</h2>
+                    <h2 class="page-title">Modifier utilisateur</h2>
 
                     <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
 
                     <form action="edit.php" method="post">
                         <input type="hidden" name="id" value="<?php echo $id; ?>" >
                         <div>
-                            <label>Username</label>
+                            <label>Nom d'utilisateur</label>
                             <input type="text" name="username" value="<?php echo $username; ?>" class="text-input">
                         </div>
                         <div>
@@ -64,7 +64,7 @@ adminOnly();
                             <input type="email" name="email" value="<?php echo $email; ?>" class="text-input">
                         </div>
                         <div>
-                            <label>Password</label>
+                            <label>Mot de passe</label>
                             <input type="password" name="password" value="<?php echo $password; ?>" class="text-input">
                         </div>
                         <div>
@@ -87,7 +87,7 @@ adminOnly();
                         </div>
 
                         <div>
-                            <button type="submit" name="update-user" class="btn btn-big">Update User</button>
+                            <button type="submit" name="update-user" class="btn btn-big">Modifier utilisateur</button>
                         </div>
                     </form>
 

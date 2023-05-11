@@ -26,7 +26,7 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Edit Topic</title>
+        <title>Section Administration - Modifier le sujet</title>
     </head>
 
     <body>
@@ -42,20 +42,20 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Topic</a>
-                    <a href="index.php" class="btn btn-big">Manage Topics</a>
+                    <a href="create.php" class="btn btn-big">Ajouter un sujet</a>
+                    <a href="index.php" class="btn btn-big">Gérer les sujets</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Edit Topic</h2>
+                    <h2 class="page-title">Modifier le sujet</h2>
                     <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
 
                     <form action="edit.php" method="post">
                         <input type="hidden" name="id" value="<?php echo $id; ?>" >
                         <div>
-                            <label>Name</label>
+                            <label>Nom</label>
                             <input type="text" name="name" value="<?php echo $name; ?>" class="text-input">
                         </div>
                         <div>
@@ -64,7 +64,7 @@ adminOnly();
                         </div>
 
                         <div>
-                            <button type="submit" name="update-topic" class="btn btn-big">Update Topic</button>
+                            <button type="submit" name="update-topic" class="btn btn-big">Mettre à jour le sujet</button>
                         </div>
                     </form>
 

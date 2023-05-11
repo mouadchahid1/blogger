@@ -1,4 +1,5 @@
-<header>
+
+<header >
     <a href="<?php echo BASE_URL . '/index.php' ?>" class="logo">
       <h1 class="logo-text"><span>AC</span>Blog</h1>
     </a>

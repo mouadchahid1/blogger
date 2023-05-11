@@ -9,7 +9,10 @@ adminOnly();
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
+    <!-- animation link --> - <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
         <!-- Font Awesome -->
         <link rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
@@ -44,7 +47,7 @@ adminOnly();
 
                 <div class="content">
 
-                    <h2 class="page-title">Dashboard</h2>
+                    <h2 class="page-title">tableau de bord</h2>
 
                     <?php include(ROOT_PATH . '/app/includes/messages.php'); ?>
 

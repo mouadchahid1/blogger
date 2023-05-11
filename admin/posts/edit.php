@@ -42,14 +42,14 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Post</a>
-                    <a href="index.php" class="btn btn-big">Manage Posts</a>
+                    <a href="create.php" class="btn btn-big">Ajouter un post</a>
+                    <a href="index.php" class="btn btn-big">Gérer les posts</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Edit Post</h2>
+                    <h2 class="page-title">Modifier un  post</h2>
 
                     <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
 
@@ -85,19 +85,19 @@ adminOnly();
                             <?php if (empty($published) && $published == 0): ?>
                                 <label>
                                     <input type="checkbox" name="published">
-                                    Publish
+                                    Publie
                                 </label>
                             <?php else: ?>
                                 <label>
                                     <input type="checkbox" name="published" checked>
-                                    Publish
+                                    Publie
                                 </label>
                             <?php endif; ?>
                            
 
                         </div>
                         <div>
-                            <button type="submit" name="update-post" class="btn btn-big">Update Post</button>
+                            <button type="submit" name="update-post" class="btn btn-big">Modifie le post</button>
                         </div>
                     </form>
 

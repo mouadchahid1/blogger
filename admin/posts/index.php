@@ -26,7 +26,7 @@ adminOnly();
         <!-- Admin Styling -->
         <link rel="stylesheet" href="../../assets/css/admin.css">
 
-        <title>Admin Section - Manage Posts</title>
+        <title>Section admin - Gerer un post</title>
     </head>
 
     <body>
@@ -42,14 +42,14 @@ adminOnly();
             <!-- Admin Content -->
             <div class="admin-content">
                 <div class="button-group">
-                    <a href="create.php" class="btn btn-big">Add Post</a>
-                    <a href="index.php" class="btn btn-big">Manage Posts</a>
+                    <a href="create.php" class="btn btn-big">Ajouter Post</a>
+                    <a href="index.php" class="btn btn-big">Gérer Posts</a>
                 </div>
 
 
                 <div class="content">
 
-                    <h2 class="page-title">Manage Posts</h2>
+                    <h2 class="page-title">Gérer Posts</h2>
 
                     <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
 
@@ -70,9 +70,9 @@ adminOnly();
                                     <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="delete">Supprimer</a></td>
 
                                     <?php if ($post['published']): ?>
-                                        <td><a href="edit.php?published=0&p_id=<?php echo $post['id'] ?>" class="unpublish">unpublish</a></td>
+                                        <td><a href="edit.php?published=0&p_id=<?php echo $post['id'] ?>" class="unpublish">Publie</a></td>
                                     <?php else: ?>
-                                        <td><a href="edit.php?published=1&p_id=<?php echo $post['id'] ?>" class="publish">publish</a></td>
+                                        <td><a href="edit.php?published=1&p_id=<?php echo $post['id'] ?>" class="publish">Depublie</a></td>
                                     <?php endif; ?>
                                     
                                 </tr>

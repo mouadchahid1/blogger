@@ -6,4 +6,9 @@
       unset($_SESSION['type']);
     ?>
   </div>
+  <script>
+    setTimeout(function(){
+      document.querySelector('.msg').style.display = 'none';
+    }, 10000); // 20 secondes
+  </script>
 <?php endif; ?>

@@ -97,7 +97,7 @@ adminOnly();
 
                         </div>
                         <div>
-                            <button type="submit" name="add-post" class="btn btn-big">Ajoutepsot</button>
+                            <button type="submit" name="add-post" class="btn btn-big">Ajoute post</button>
                         </div>
                     </form>
 
